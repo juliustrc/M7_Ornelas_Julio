@@ -16,7 +16,7 @@
 			<h1>Smith Photography</h1>
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -24,36 +24,57 @@
 		</header>
 		
 		<main>
+			<section id="secintro">
+			<h2>It would be our pleasure to serve you!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus interdum arcu. Integer dignissim turpis fringilla, porttitor mi eget, faucibus magna. Aenean pulvinar mauris quis cursus lobortis. Vivamus congue accumsan pellentesque. Etiam fermentum convallis libero, eu facilisis sem. Nulla eu nisi augue. Phasellus tempor, ligula non vestibulum facilisis, ante enim feugiat velit, vitae accumsan nunc ante ac diam.</p>
+			</section>
+			
+			<section id="seccontact">
 			<form action="/action_page.php">
-				<label for="fname">First Name:</label><br>
-				<input type="text" id="fname" name="fname"><br>
-				<label for="lname">Last Name:</label><br>
-				<input for="text" id="lname" name="lname"><br>
-			
+				<div class="fname">
+					<label for="fname">First Name:</label><br>
+					<input type="text" id="fname" name="fname" size="25%"><br>
+				</div>
+				<div class="lname">
+					<label for="lname">Last Name:</label><br>
+					<input for="text" id="lname" name="lname" size="25%"><br>
+				</div>
+				
 				<label for="email">Enter your email:</label><br>
-				<input type="email" id="email" name="email"><br>
+				<input type="email" id="email" name="email" size="50%"><br>
+				<label for="subject">Subject:</label><br>
+				<input type="text" id="subject" name="subject" size="50%"><br>
+				
+				<label for="message">Message:</label><br>
+				<textarea id="message" name="message" rows="4" cols="60%">Tell me about your project</textarea>
 				<br>
+				
+				<section id="radiocheckbox">
+				<div id="objective">
+					<h4>Objective:</h4>
+					<input type="radio" id="commercial" name="commercial" value="commercial">
+					<label for="Commercial">Commercial</label><br>
+					<input type="radio" id="Fineart" name="fineart" value="fineart">
+					<label for="fineart">Fine Art</label><br>
+					<input type="radio" id="360" name="360" value="360">
+					<label for="360">360 Tours</label><br>
+				</div>
+				
+				
+				<div id="typephoto">
+					<h4>Type of Photography</h4>
+					<input type="checkbox" id="status01" name="status" value="portraits">
+					<label for="status">Portraits</label><br>
+					<input type="checkbox" id="status02" name="status" value="lanscape">
+					<label for="status">Landscape</label><br>
+					<input type="checkbox" id="status03" name="status" value="architecture">
+					<label for="status">Architecture</label><br>
+				</div>
+				</section>
 			
-				<h4>Gender</h4>
-				<input type="radio" id="male" name="gender" value="male">
-				<label for="male">Male</label><br>
-				<input type="radio" id="female" name="gender" value="male">
-				<label for="female">Female</label><br>
-				<input type="radio" id="other" name="gender" value="other">
-				<label for="other">Other</label><br>
-			
-				<h4>Status</h4>
-				<input type="checkbox" id="status01" name="status" value="fulltimestudent">
-				<label for="status">Full-Time Student</label><br>
-				<input type="checkbox" id="status02" name="status" value="parttimestudent">
-				<label for="status">Part-Time Student</label><br>
-				<input type="checkbox" id="status03" name="status" value="fulltimeemployee">
-				<label for="status">Full-Time Employee</label><br>
-				<input type="checkbox" id="status04" name="status" value="parttimeemployee">
-				<label for="status">Part-Time Emplolyee</label><br>
-			
-				<input type="submit" value="submit">
+				<input id="submitform" type="submit" value="submit">
 			</form>
+			</section>
 		</main>
 		
 		<footer>
